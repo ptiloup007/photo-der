@@ -364,76 +364,104 @@ border-radius: 15px;
     .navbar-nav{display:none}
   }
   
-  @media(min-width:568px){
+  @media screen and (max-width: 580px){
     
-    .open-slide{
+   /* .open-slide{
       display:none
-    }
+    }*/
     .btn {
       padding: 1.6rem 3rem;
     }
-    .footerdiv{
-      box-shadow: 10px 10px 35px gray;
+    footer h1{
+      font-weight: bold;
+      
+      font-size: 20px;
+    } 
+    footer h3{
+      font-weight: normal;
+      font-size: 15px;
     }
-
+ 
 }
   
   
   /*footer*/
 
-  /*.footerdiv{
-    
-    width: 60vw;
-    height: 40vw;
-    background-image: url(/carte.jpeg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: auto;
-    border: 3px solid black;
-    box-shadow: 20px 20px 35px gray;
-  }
+footer h1{
+  font-weight: bold;
+}  
 
-   .footerbutton{
-    
-    width: 58vw;
-    height: 37.5vw;
-    background-color: rgba(232, 236, 12, 0.123);
-    margin: auto;
-    margin-top: 1.4vw;
-    
-    
-  }*/
+footer h3{
+  font-weight: normal;
+} 
 
-  .footerbutton{
-    width: 60vw;
-    height: 40vw;
-    background-image: url(/carte.jpeg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: auto;
-    border: 4px solid black;
-    border-radius: 65px;
-    box-shadow: 20px 20px 35px gray;
-  }
-  .footerbutton :hover{
-    
-    background-image: url(/cartenegatif.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: auto;
-    border: 4px solid rgb(78, 77, 77);
-    border-radius: 65px;
-    box-shadow: 20px 20px 35px gray;
-  }
-.ghjk {
-  width: 650px;
-  height: 350px;
-  background-color: red;
+.btnA {
+  width: 60vw;
+  height: 40vw;
+  background-image: url(/carte.jpeg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  border: 6px double black;
+  box-shadow: 20px 20px 35px gray;
 }
-.ghjk img:hover{
 
-  background-color: rgb(102, 255, 0);
+.btnA:hover {
+  background-image: url(/cartenegatif.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  /*box-shadow: 20px 20px 35px rgb(21, 243, 1);*/
+}
+
+/*modal*/
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #5c5b5b;
+  background-color: #adff2f;
+}
+
+.modal-content{
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: 10px;
+  border: 3px solid #888;
+  width: 80%;
+  display: inline-block;
+}
+
+.close {
+  color: rgb(148, 34, 34);
+  float: right;
+  font-size: 38px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 90px;
+  
+ 
+}
+
+.close:hover
+.close:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.aa {
+  font-size: 3.2vw ;
+  font-weight: bold;
+  text-align: center;
+}
+.saisie{
+  border: 3px solid black;
+  font-size: 3.2vw ;
 }
