@@ -39,14 +39,17 @@
   $(function() {
     var welcomeSection = $('.welcome-section'),
     enterButton = welcomeSection.find('.enter-button');
+
     setTimeout(function() {
       welcomeSection.removeClass('content-hidden');
     },800);
+
     enterButton.on('click', function(e){
     e.preventDefault();
     welcomeSection.addClass('content-hidden').fadeOut();
     });
   });
+
   </script>
 
 <nav class="navbar" id="nav">
@@ -84,6 +87,7 @@
       document.getElementById('side-menu').style.width = '160px';
       document.getElementById('main').style.marginLeft = '160px';
     }
+
     function closeSlideMenu(){
       document.getElementById('side-menu').style.width = '0';
       document.getElementById('main').style.marginLeft = '0';
@@ -91,16 +95,22 @@
   </script>
 
 <script type="text/javascript">
+
   
+
   // Scrolling Effect
+
   $(window).on("scroll", function() {
         if($(window).scrollTop()) {
               $('nav').addClass('black');
         }
+
         else {
               $('nav').removeClass('black');
         }
   })
+
+
   </script>
 
     <main>
@@ -203,11 +213,11 @@
         </div>
       </div>
     </main>
-    <div class="ghjk"><img src="carte.jpeg" alt=""></div>
-    <div class="footerbutton" id="contact">CLIUCK</div>
+
     <footer>
-        <button class="footerbutton" id="contact">CLIUCK</button>
-        
+        <h1>Me Contacter</h1>
+        <h3>Cliquez ci-dessous</h3>
+        <button class="btnA" id="contact"> </button>
       <!--div class="footerdiv" id="contact">
         <button class="footerbutton"></button>
         
@@ -219,6 +229,64 @@
       <p>Téléphone:
         <strong>07.81.95.56.45</strong>
       </p-->
+      <br>
+      <!--modal-->
+      <button class="btnA" id="myBtn"></button>
+
+      <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form action="" method="get">
+          <p>
+            <label class="aa" for="Noms">Votre nom :</label><br>
+            <input class="saisie" type="text" name="name"id="name" placeholder="Ex: Dupont" size="30" 
+            maxlength="20"/>
+            <p>
+            <label class="aa" for="Noms">Votre prénom :</label><br>
+            <input class="saisie" type="text" name="name"id="name" placeholder="Ex: Nicolas" size="30" 
+            maxlength="20"/>
+          </p>
+          <p>
+          <label class="aa" for="Noms">Votre Numéro :</label><br>
+          <input class="saisie" type="text" name="name"id="name" placeholder="N°:" size="30" 
+          maxlength="10"/>
+          <p>
+        </p>
+        <label class="aa" for="Noms">Votre Email :</label><br>
+        <input  class="saisie" type="text" name="name"id="name" placeholder="Email:" size="30" 
+        maxlength="40"/>
+      </p>
+      <p>
+        <label class="aa" for="Noms">Votre Message :</label><br>
+        <textarea class="saisie" type="text" name="name"id="name" placeholder="Message:"></textarea>
+      </p>
+
+        </form>
+      </div>
+
+    </div>
+    <script>
+    var modal= document.getElementById('myModal'); 
+    
+    var btn = document.getElementById("myBtn");
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function(){
+      modal.style.display = "block";
+    }
+    
+    span.onclick = function(){
+      modal.style.display = "none"
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal){
+        modal.style.display = "none";
+      }
+    }
+     </script>
     </footer>
     
       <script>
